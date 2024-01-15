@@ -6,7 +6,7 @@
 }
 body {
 	font-family: 'Poppins', sans-serif;
-	background-image: url(./images/bg-desktop.svg);
+	background-image: url(./svgs/bg-desktop.svg);
 	background-color: #684bb1;
 	background-repeat: no-repeat;
 	background-size: contain;
