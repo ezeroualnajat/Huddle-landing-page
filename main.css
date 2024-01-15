@@ -1,12 +1,108 @@
+/* [ START ] Main Rules */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
 	font-family: 'Poppins', sans-serif;
 	background-image: url(./images/bg-desktop.svg);
 	background-color: #684bb1;
+	background-repeat: no-repeat;
+	background-size: contain;
 	min-height: 100dvh;
+	color: #ffffff;
 }
+.container {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 5rem;
+}
+/* [ END ] Main Rules */
+
+/* [ START ] Main Section STYLE */
+main {
+	display: grid;
+	grid-template-areas:
+		'header header'
+		'picture section'
+		' footer footer';
+	grid-template-columns: repeat(2, 1fr);
+}
+main header {
+	grid-area: header;
+	margin-top: 4rem;
+	margin-bottom: 6.5rem;
+}
+main picture {
+	grid-area: picture;
+	margin-bottom: 1.688rem;
+	margin-right: 3.688rem;
+}
+main section {
+	grid-area: section;
+}
+main section h1 {
+	font-size: 2.5rem;
+	line-height: 1.5;
+	max-width: 12.175em;
+	margin-bottom: 0.6em;
+}
+main section p {
+	font-size: 1.125rem;
+	line-height: 1.5;
+	max-width: 28.888em;
+	margin-bottom: 1.3334em;
+	font-family: 'Open Sans', sans-serif;
+}
+main section button {
+	border: none;
+	padding: 0.7223em 3.5em 0.8889em 3.5556em;
+	border-radius: 1.5556em;
+	box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+	font-size: 1.125rem;
+	line-height: 1.5;
+	color: #684bb1;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+main section button:hover {
+	background-color: #e880e8;
+	color: #ffffff;
+	transition: all 0.3s ease-in-out;
+}
+main footer {
+	grid-area: footer;
+	margin-bottom: 2.5rem;
+}
+main footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: end;
+	column-gap: 1rem;
+}
+main footer ul li {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+main footer ul li:hover {
+	border-color: #ff52c1;
+}
+main footer ul li svg {
+	fill: #ffffff;
+}
+main footer ul li:hover svg {
+	fill: #ff52c1;
+}
+main section button:hover,
+main footer ul li:hover,
+main footer ul li:hover svg {
+	transition: all 0.3s ease-in-out;
+}
+/* [ END ] Main Section STYLE */
